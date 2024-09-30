@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessPal - Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+
+
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">FitVital</a>
+            <ul class="nav-links">
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <h1>Your Fitness Recommendations</h1>
+            <div class="progress-container">
+                <h3>Daily Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress" id="progress-bar"></div>
+                </div>
+                <p id="progress-text">0 of 8 tasks completed</p>
+            </div>
+            <div class="tabs">
+                <button class="tab active" data-tab="diet">Diet Plan</button>
+                <button class="tab" data-tab="exercise">Exercise Plan</button>
+            </div>
+            <div id="diet" class="tab-content active">
+                <div class="recommendations-grid" id="diet-recommendations"></div>
+            </div>
+            <div id="exercise" class="tab-content">
+                <div class="recommendations-grid" id="exercise-recommendations"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+    <script src="recommendations.js"></script>
+    
+    
+</body>
+</html>
